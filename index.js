@@ -3,8 +3,7 @@ const t=process.env.TELEGRAM_TOKEN;
 const bot=new TelegramBot(t,{polling:true});
 console.log("Bot iniciado!");
 function sinal(id){
-let d=new Date(new Date().toLocaleString("en-US",{timeZone:"America/Sao_Paulo"}));
-d.setMinutes(d.getMinutes()+3);
+let d=new Date();d.setUTCHours(d.getUTCHours()-3);d.setMinutes(d.getMinutes()+3);
 let h=String(d.getHours()).padStart(2,'0');
 let m=String(d.getMinutes()).padStart(2,'0');
 let hr=h+":"+m;
