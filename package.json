@@ -1,18 +1,1 @@
-{
-  "name": "express-hello-world",
-  "version": "1.0.0",
-  "description": "Express Hello World on Render",
-  "main": "index.js",
-  "repository": "https://github.com/render-examples/express-hello-world",
-  "author": "Render Developers",
-  "license": "MIT",
-  "private": false,
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "express": "^5.0.0",
-    "ccxt": "^4.2.0",
-    "node-telegram-bot-api": "^0.64.0"
-  }
-}
+{"name":"bot-eurusd-otc","version":"1.0.0","main":"index.js","scripts":{"start":"node index.js"},"dependencies":{"express":"4.18.2","ccxt":"4.2.25","node-telegram-bot-api":"^0.61.0"}}
