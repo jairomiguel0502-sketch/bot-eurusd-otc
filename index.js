@@ -14,3 +14,4 @@ bot.sendMessage(id,txt);
 bot.onText(/\/start/,(m)=>{bot.sendMessage(m.chat.id,"Bot Online ✅ Horario Brasilia");});
 bot.onText(/AUTO/,(m)=>{bot.sendMessage(m.chat.id,"✅ AUTO M1 ATIVADO!");setInterval(()=>sinal(m.chat.id),120000);});
 bot.onText(/EURUSD-OTC/,(m)=>sinal(m.chat.id));
+const http = require('http'); http.createServer((req,res)=>res.end('Bot online')).listen(process.env.PORT||10000);
